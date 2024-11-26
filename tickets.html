@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>ElectroVibe Fest - Tickets</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+ <header>
+	 <h1>Compra tickets ElectroVibe Fest</h1>
+	     <nav>
+      <a href="index.html">Inicio</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="lineup.html">Lineup</a>
+      <a href="camping.html">Camping</a>
+      <a href="faq.html">FAQS</a>
+    </nav> <br>
+	 <h2> Rellena el siguiente formulario </h2>
+ </header>
+ <main>
+	 <form>
+		 <fieldset>
+		 	 <!-- FORMULARIO PARA COMPRA DE TICKETS -->
+       <h3> Datos personales de la compra: </h3>
+			  <!-- CAMPOS -->
+ 			<!-- Nombre, apellidos.... -->
+			 <label for="nombre">Nombre</label>
+			 <input type="text" name="nombre" id="nombre" required>
+
+			 <label for="apellidos">Apellidos</label>
+			 <input type="text" name="apellidos" id="apellidos" required>
+			 <br><br>
+
+			 <label for="fecha">Fecha de nacimiento:</label>
+			 <input type="date" id="fecha" name="fecha" required> <br><br>
+		 <!-- Teléfono -->
+	        <label for="telefono">Teléfono</label>
+        		<input type="tel" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+	        <br><br>
+
+			 <label for="email">Email para acceder a ElectroVibe Fest platform </label>
+			 <input type="text" name="email" id="email" required>
+			 <br><br>
+			 <!-- Contraseña -->
+	        <label for="contra">Contraseña para acceder a ElectroVibe Fest platform</label>
+	        <input type="password" name="contra" id="contra" required>
+	        <br><br>
+		 </fieldset>
+		 <fieldset>
+			 <h3> Tickets: </h3>
+        <!-- CAMPOS -->
+
+  <!-- Selección del tipo de ticket -->
+  <label for="tipo_ticket">Selecciona el tipo de ticket:</label>
+  <select id="tipo_ticket" name="tipo_ticket" required>
+    <option value="" disabled selected>Selecciona un ticket</option>
+    <option value="tres_dias">3 Días - $150</option>
+    <option value="tres_dias_premium">3 Días Premium - $250</option>
+    <option value="dia_1">Día 1 - $60</option>
+    <option value="dia_2">Día 2 - $60</option>
+    <option value="dia_3">Día 3 - $60</option>
+  </select>
+  <br><br>
+
+
+      <label for="cantidad">Cantidad:</label>
+      <select id="cantidad" name="cantidad" required>
+        <option value="" disabled selected>Selecciona cantidad</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <br> <br>
+    <!-- Área de texto para introducir correos electrónicos -->
+    <label for="correos">Introduce los correos de los demás miembros (separados por coma):</label> <br> <br>
+    <textarea id="correos" name="correos" rows="10" cols="30" placeholder="ejemplo1@dominio.com, ejemplo2@dominio.com" ></textarea>
+    <br><br>
+    <!-- Radio buttons para ser socio o no -->
+    <label>¿Eres socio?</label>
+    <input type="radio" name="socio" id="socio_si" value="si">
+    <label for="socio_si">Sí</label>
+
+    <input type="radio" name="socio" id="socio_no" value="no" checked>
+    <label for="socio_no">No</label>
+    <br><br>
+
+    <!-- Área de texto para introducir ID de socio -->
+    <label for="id_socio">Introduce tu ID de socio (si aplicable):</label>
+    <input type="text" id="id_socio" name="id_socio">
+    <br><br>
+
+    <!-- Radio buttons para acceso a preparties -->
+    <label>¿Deseas acceder a las preparties?</label>
+    <input type="radio" name="preparties" id="preparties_si" value="si">
+    <label for="preparties_si">Sí</label>
+
+    <input type="radio" name="preparties" id="preparties_no" value="no" checked>
+    <label for="preparties_no">No</label>
+    <br>
+		 </fieldset>
+     <br>
+      <input type="checkbox" id="aceptar" name="aceptar">
+      <label for="aceptar">Acepto los términos y condiciones</label>
+      <br>
+      <input type="checkbox" id="info" name="info" checked>
+      <label for="info">Deseo recibir publicidad e información sobre futuros eventos</label>
+      <br>
+      <input type="submit" id = submit-btn value="Pagar">
+	 </form>
+   <br>
+ </main>
+
+ <footer>
+    <p>Síguenos en redes sociales:</p>
+    <ul>
+      <li>Facebook: ElectroVibeFest</li>
+      <li>Instagram: @ElectroVibeFest</li>
+      <li>Twitter: @ElectroVibeFest</li>
+    </ul>
+    <p>&copy; 2024 ElectroVibe Fest. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
+
